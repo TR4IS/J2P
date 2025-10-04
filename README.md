@@ -22,5 +22,6 @@ Convert multiple images (PNG/JPG) into a single, multi-page A4 PDF with a simple
 
 ## Installation 
 
+- Download the latest exe from [here](https://github.com/tr4is/j2p/releases/) and run it!
 
 
