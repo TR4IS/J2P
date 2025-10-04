@@ -1,3 +1,6 @@
+![alt text](docs/J2P.ico)
+
+
 # J2P — Images to PDF (Tkinter + Pillow)
 
 Convert multiple images (PNG/JPG) into a single, multi-page A4 PDF with a simple GUI. Select images, auto-fit to A4 pages, and export a PDF in one click.
