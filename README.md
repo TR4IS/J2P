@@ -12,17 +12,15 @@ Convert multiple images (PNG/JPG) into a single, multi-page A4 PDF with a simple
 
 ## Screenshots
 
-- Main window: Entry for PDF name, buttons for Select / Convert / Clear  
-- Log area: Shows selected files and status
-
-
+- Main window: Entry for PDF name, buttons for Select / Convert / Clear
+<img width="320" height="268" alt="Screenshot 2025-10-04 032051" src="https://github.com/user-attachments/assets/135a56d9-24f9-46f8-8e4f-cb01bd9d14ab" />
 
 ## Requirements
 
 - Python 3.10+ (Windows recommended; Tkinter included with standard Python installer)
 - Pillow
 
-## Installation (for development)
+## Installation 
 
-1) Clone the repository
+
 
