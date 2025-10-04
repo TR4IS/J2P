@@ -1,3 +1,6 @@
+Here’s your file with the easter egg fully removed and no remaining references to it.
+
+```python
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -14,9 +17,6 @@ from PIL import Image  # Pillow image handling
 
 # Global state for selected/composed pages
 imgs = []  # List[Image.Image] holding composed page-sized PIL images
-
-# Easter egg counter (simple click counter shared by buttons)
-_click_score = 0  # Int used to trigger a playful message at 23
 
 
 def main():
@@ -42,17 +42,11 @@ def main():
 
 def convert():
     """Export selected/composed images as a single multi-page PDF."""
-    global _click_score, imgs
-    _click_score += 2  # Increment click score to drive Easter egg
-
-    # Easter egg trigger at specific score
-    if _click_score == 23:
-        _set_log("Congrats !!! You Found an Easter Egg <3")
-        return
+    global imgs
 
     # No images selected case
     if not imgs:
-        _set_log(f"No Files to Convert. ")
+        _set_log("No Files to Convert.")
         return
 
     # Resolve output path
@@ -87,15 +81,10 @@ def convert():
 
 def clear_files():
     """Clear selected images/pages and reset state."""
-    global _click_score, imgs
-    _click_score += 3  # Increment click score to drive Easter egg
-
-    if _click_score == 23:
-        _set_log("Congrats !!! You Found an Easter Egg <3")
-        return
+    global imgs
 
     if not imgs:
-        _set_log(f"No Files to Clear. ")
+        _set_log("No Files to Clear.")
         return
 
     imgs = []  # Reset the in-memory pages list
@@ -112,7 +101,7 @@ def select_files():
     )
     # Clear before printing the files
     _set_log("")
-    
+
     # If user cancels, do nothing
     if not file_paths:
         return
@@ -189,3 +178,4 @@ if __name__ == "__main__":
     # keep this as-is per the PAGE workflow used by the project.
     import J2P  # Local PAGE-generated module
     J2P.start_up()  # Delegates to PAGE runner which should invoke main()
+```
