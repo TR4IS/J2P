@@ -61,7 +61,7 @@ def convert():
     os.makedirs(base_dir, exist_ok=True)  # Ensure directory exists
     output_path = os.path.join(
         base_dir,
-        f"{name_of_file if name_of_file else stamp}.pdf"
+        f"{name_of_file if name_of_file != "leave empty for default name" else stamp}.pdf"
     )
 
     # Save multi-page PDF; imgs[0] is first page, rest are appended
@@ -179,3 +179,4 @@ if __name__ == "__main__":
     import J2P  # Local PAGE-generated module
     J2P.start_up()  # Delegates to PAGE runner which should invoke main()
 ```
+
